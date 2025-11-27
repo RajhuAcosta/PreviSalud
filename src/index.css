@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Variables CSS personalizadas */
+:root {
+    --primary: #2563eb;
+    /* Azul profesional */
+    --secondary: #059669;
+    /* Verde salud */
+    --danger: #dc2626;
+    /* Rojo alertas altas */
+    --warning: #d97706;
+    /* Naranja alertas medias */
+    --success: #16a34a;
+    /* Verde éxito */
+    --background: #f8fafc;
+    /* Fondo claro */
+    --surface: #ffffff;
+    /* Superficie cards */
+}
+
+/* Clases personalizadas para riesgos */
+.risk-alto {
+    background-color: var(--danger);
+}
+
+.risk-moderado {
+    background-color: var(--warning);
+}
+
+.risk-bajo {
+    background-color: var(--success);
+}
